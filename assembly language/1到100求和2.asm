@@ -9,7 +9,7 @@ include vcIO.inc
 			cmp ecx,101	
 			jz l1	;循环到101次跳出循环
 			add eax,ecx	;将当前数字累加到eax
-			inc ecx		;ecx--
+			inc ecx		;ecx++
 			jmp again	;继续循环
 		l1:
 			pushad
